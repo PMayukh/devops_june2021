@@ -15,6 +15,8 @@
 	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>11</java.version>
+		<jersey.version>2.34</jersey.version>
+                <junit.version>5.7.1</junit.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -28,21 +30,21 @@
 			<scope>test</scope>
 		</dependency>
 		
-	<dependency>
-          <groupId>org.glassfish.jersey</groupId>
-          <artifactId>jersey-bom</artifactId>
-          <version>${jersey.version}</version>
-          <type>pom</type>
-          <scope>import</scope>
-      </dependency>
+	       <dependency>
+                     <groupId>org.glassfish.jersey</groupId>
+                     <artifactId>jersey-bom</artifactId>
+                     <version>${jersey.version}</version>
+                     <type>pom</type>
+                     <scope>import</scope>
+               </dependency>
 		
-      <dependency>
-	<groupId>org.junit</groupId>
-	<artifactId>junit-bom</artifactId>
-	<version>${junit.version}</version>
-	<type>pom</type>
-	<scope>import</scope>
-      </dependency>
+               <dependency>
+	             <groupId>org.junit</groupId>
+	             <artifactId>junit-bom</artifactId>
+	             <version>${junit.version}</version>
+	             <type>pom</type>
+	             <scope>import</scope>
+               </dependency>
     	
 	</dependencies>
 
