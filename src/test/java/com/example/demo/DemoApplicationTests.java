@@ -12,16 +12,18 @@ class DemoApplicationTests {
 	
 	
 	@Test
-	void contextLoads() {
+	public void shouldAnswerWithTrue() {
+	assertTrue( true );
 	}
 	
-	
-	@Test
-	void contextLoads() {
+        @Test
+	public void shouldAnswerWithTrue() {
+	assertTrue( true );
 	}
-	
+
 	@Test
-	void contextLoads() {
+	public void shouldAnswerWithTrue() {
+	assertTrue( true );
 	}
 
 }
