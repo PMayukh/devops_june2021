@@ -43,7 +43,10 @@ steps {
  }
 
 post {
-
+       agent { 
+                label 'Node01'
+            }
+	
 	success{
 	junit '**/target/surefire-reports/*.xml'
 	}
