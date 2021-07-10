@@ -17,6 +17,7 @@
 		<java.version>11</java.version>
 		<jersey.version>2.34</jersey.version>
                 <junit.version>5.7.1</junit.version>
+		<basedir>/var/lib/jenkins/workspace/maven_project/</basedir>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -57,4 +58,26 @@
 		</plugins>
 	</build>
 
+	
+	<reporting>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-report-plugin</artifactId>
+        <version>3.0.0-M5</version>
+        <configuration>
+          <outputDirectory>${basedir}/target/surefire-reports</outputDirectory>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-site-plugin</artifactId>
+        <version>2.1</version>
+        <configuration>
+          <outputDirectory>${basedir}/target/surefire-reports</outputDirectory>
+        </configuration>
+      </plugin>
+    </plugins>
+  </reporting>
+	
 </project>
