@@ -38,15 +38,9 @@ steps {
 	mvn spring-boot:run
 	"""
    }
-  }   
-
- }
-
-post {
-       agent { 
-                label 'Node01'
-            }
 	
+	post {
+       
 	success{
 	junit '**/target/surefire-reports/*.xml'
 	}
@@ -55,5 +49,10 @@ post {
               echo "Job Completed"
           }
       }   
+
+  }   
+
+ }
+
 
 }
