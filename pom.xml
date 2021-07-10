@@ -17,7 +17,7 @@
 		<java.version>11</java.version>
 		<jersey.version>2.34</jersey.version>
                 <junit.version>5.7.1</junit.version>
-		<basedir>/var/lib/jenkins/workspace/maven_project/</basedir>
+		<basedir>/home/ubuntu/workspace/maven_project/</basedir>
 	</properties>
 	<dependencies>
 		<dependency>
