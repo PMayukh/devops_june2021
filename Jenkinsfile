@@ -38,8 +38,20 @@ steps {
 	mvn spring-boot:run
 	"""
    }
+}	
+
+stage('Publishing reports'){
+	agent { 
+                label 'master'
+            }
+steps {
+           
+	sh """
+	echo "Publishing Test reports"
+	"""
+   }
 	
-	post {
+   post {
        
 	success{
 	junit '**/target/surefire-reports/*.xml'
@@ -49,7 +61,7 @@ steps {
               echo "Job Completed"
           }
       }   
-
+	
   }   
 
  }
