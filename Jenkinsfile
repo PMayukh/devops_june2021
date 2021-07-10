@@ -42,12 +42,12 @@ steps {
 
 stage('Publishing reports'){
 	agent { 
-                label 'master'
+                label 'Node02'
             }
 steps {
            
 	sh """
-	echo "Publishing Test reports"
+	echo Publishing Test reports
 	"""
    }
 	
