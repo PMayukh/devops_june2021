@@ -42,7 +42,7 @@ steps {
 
 stage('Publishing reports'){
 	agent { 
-                label 'Node02'
+                label 'Node01'
             }
 steps {
            
@@ -52,7 +52,9 @@ steps {
    }
 	
 	post {
-	
+		success{
+		junit '**/target/surefire-reports/*.xml'
+		}
 	always{
               echo "Job Completed"
           }
