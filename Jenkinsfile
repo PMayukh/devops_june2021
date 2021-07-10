@@ -51,11 +51,7 @@ steps {
 	"""
    }
 	
-   post {
-       
-	success{
-	junit '**/target/surefire-reports/*.xml'
-	}
+	post {
 	
 	always{
               echo "Job Completed"
