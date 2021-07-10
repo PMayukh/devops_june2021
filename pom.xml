@@ -27,6 +27,23 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+		
+	<dependency>
+          <groupId>org.glassfish.jersey</groupId>
+          <artifactId>jersey-bom</artifactId>
+          <version>${jersey.version}</version>
+          <type>pom</type>
+          <scope>import</scope>
+      </dependency>
+		
+      <dependency>
+	<groupId>org.junit</groupId>
+	<artifactId>junit-bom</artifactId>
+	<version>${junit.version}</version>
+	<type>pom</type>
+	<scope>import</scope>
+      </dependency>
+    	
 	</dependencies>
 
 	<build>
