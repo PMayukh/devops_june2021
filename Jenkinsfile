@@ -10,7 +10,7 @@ agent none
 stages {
 
 stage('Checkout the code'){
-	agent 'master'  
+	agent any  
            steps{
              git url: 'https://github.com/PMayukh/devops_june2021.git', branch: 'master'
            }
